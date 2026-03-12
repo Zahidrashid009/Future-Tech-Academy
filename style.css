@@ -196,21 +196,19 @@ background:#f5f7fb;
 }
 
 .payment-card{
-
 background:white;
-width:300px;
-margin:auto;
+max-width:320px;
+margin:40px auto;
 padding:30px;
 border-radius:10px;
 box-shadow:0 5px 20px rgba(0,0,0,0.2);
-
+text-align:center;
 }
 
 .payment-card img{
-
-width:200px;
-margin:15px 0;
-
+display:block;
+margin:auto;
+max-width:200px;
 }
 
 
@@ -223,4 +221,27 @@ color:white;
 text-align:center;
 padding:20px;
 
+}
+
+/* Mobile Responsive Fix */
+
+@media (max-width: 768px){
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+padding:15px;
+}
+
+nav a{
+width:40%;
+text-align:center;
+}
+
+}
+img{
+max-width:100%;
+height:auto;
 }
