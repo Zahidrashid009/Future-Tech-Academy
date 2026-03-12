@@ -6,6 +6,9 @@ background:#f4f6f9;
 
 }
 
+html{
+scroll-behavior:smooth;
+}
 
 /* Header */
 
@@ -46,6 +49,7 @@ font-size:18px;
 background:linear-gradient(120deg, rgb(176, 215, 244));
 padding:70px;
 text-align:center;
+font-size: larger;
 
 }
 
@@ -272,4 +276,57 @@ position:fixed;
 bottom:20px;
 right:20px;
 z-index:100;
+}
+
+.cta-btn{
+background:#00c853;
+color:white;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+margin-top:20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+/** course Cards **/
+
+.course-card{
+transition:0.3s;
+}
+
+.course-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+/** Discription background image **/
+
+.hero{
+background-image:url('bg\ image.jpg');
+background-size:cover;
+background-position:center;
+color:white;
+padding:80px 20px;
+}
+
+/** check boxes (label) **/
+.course-options{
+  width: 200px;
+  margin: 0 auto;
+  text-align: left; /* override center alignment */
+}
+
+.course-row{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.course-row input{
+  transform: scale(1.2);
+}
+
+.course-row span{
+  display: inline-block;
 }
